@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour {
 
-	public void Spawn (GameObject go, Vector3 spawnPoint) {
-		Instantiate (go, spawnPoint, Quaternion.identity);
+	public void Spawn (GameObject go, Vector3 spawnPoint, Quaternion rotation) {
+		Instantiate (go, spawnPoint, rotation);
 	}
 }

@@ -1,0 +1,163 @@
+fileFormatVersion: 2
+guid: c1d4aa9e0d7abea4a866f530f875a635
+timeCreated: 1494543664
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Grate_1
+    100002: Grate_2
+    100004: Grate_3
+    100006: Grate_4
+    100008: Grate_5
+    100010: Grate_6
+    100012: Grate_7
+    100014: Grate_8
+    100016: Headlight_left
+    100018: Headlight_right
+    100020: pCylinder1
+    100022: //RootNode
+    100024: Taxi_Sign
+    100026: Taxi_Text
+    100028: Wheel_back_left
+    100030: Wheel_back_right
+    100032: Wheel_front_left
+    100034: Wheel_front_right
+    400000: Grate_1
+    400002: Grate_2
+    400004: Grate_3
+    400006: Grate_4
+    400008: Grate_5
+    400010: Grate_6
+    400012: Grate_7
+    400014: Grate_8
+    400016: Headlight_left
+    400018: Headlight_right
+    400020: pCylinder1
+    400022: //RootNode
+    400024: Taxi_Sign
+    400026: Taxi_Text
+    400028: Wheel_back_left
+    400030: Wheel_back_right
+    400032: Wheel_front_left
+    400034: Wheel_front_right
+    2300000: Grate_1
+    2300002: Grate_2
+    2300004: Grate_3
+    2300006: Grate_4
+    2300008: Grate_5
+    2300010: Grate_6
+    2300012: Grate_7
+    2300014: Grate_8
+    2300016: Headlight_left
+    2300018: Headlight_right
+    2300020: //RootNode
+    2300022: Taxi_Sign
+    2300024: Taxi_Text
+    2300026: Wheel_back_left
+    2300028: Wheel_back_right
+    2300030: Wheel_front_left
+    2300032: Wheel_front_right
+    3300000: Grate_1
+    3300002: Grate_2
+    3300004: Grate_3
+    3300006: Grate_4
+    3300008: Grate_5
+    3300010: Grate_6
+    3300012: Grate_7
+    3300014: Grate_8
+    3300016: Headlight_left
+    3300018: Headlight_right
+    3300020: //RootNode
+    3300022: Taxi_Sign
+    3300024: Taxi_Text
+    3300026: Wheel_back_left
+    3300028: Wheel_back_right
+    3300030: Wheel_front_left
+    3300032: Wheel_front_right
+    4300000: Car
+    4300002: Wheel_front_right
+    4300004: Wheel_front_left
+    4300006: Wheel_back_right
+    4300008: Wheel_back_left
+    4300010: Headlight_right
+    4300012: Headlight_left
+    4300014: Grate_1
+    4300016: Grate_2
+    4300018: Grate_3
+    4300020: Grate_4
+    4300022: Grate_8
+    4300024: Grate_7
+    4300026: Grate_6
+    4300028: Grate_5
+    4300030: Taxi_Sign
+    4300032: Taxi_Text
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

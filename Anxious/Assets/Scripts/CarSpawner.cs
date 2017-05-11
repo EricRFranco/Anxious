@@ -13,7 +13,7 @@ public class CarSpawner : Spawner {
 		int carIndex = Random.Range (0, cars.Length - 1);
 		carSpawnTime -= Time.deltaTime;
 		if (carSpawnTime <= 0) {
-			Spawn (cars [carIndex], transform.position);
+			Spawn (cars [carIndex], transform.position, Quaternion.identity);
 			carSpawnTime = Random.Range (2f, 5f);
 		}
 	}
