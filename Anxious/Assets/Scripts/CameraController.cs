@@ -9,8 +9,7 @@ public class CameraController : MonoBehaviour {
 
 	void Update() {
 		float h = horizontalSpeed * Input.GetAxis ("Mouse X");
-		float v = verticalSpeed * Input.GetAxis ("Mouse Y");
-		transform.Rotate(v, h, 0);
+		transform.Rotate(0, h, 0);
 		transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 0);
 	}
 }
