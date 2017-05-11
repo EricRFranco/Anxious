@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ConfidenceController : MonoBehaviour {
 
 	private Slider _confidence;
-	private int _currentConfidence = 100;
+	private float _currentConfidence = 100f;
 
 	private void Awake() {
 		_confidence = GetComponent<Slider> ();
@@ -16,10 +16,8 @@ public class ConfidenceController : MonoBehaviour {
 		_confidence.value = _currentConfidence;
 	}
 
-	public void ChangeConfidence (int dC) {
-		
+	public void ChangeConfidence (float dC) {
 		_currentConfidence += dC;
-
 	}
 	
 }

@@ -13,6 +13,9 @@ public class Player : MonoBehaviour {
 
 	[SerializeField]
 	private float _timeLeft = 3f;
+	[SerializeField]
+	private float _hideTime = 5f;
+	private float _addTime = 2f;
 	private GameObject [] _hidingSpots;
 	private List<GameObject> _filterHidden;
 	private float z;
@@ -33,8 +36,23 @@ public class Player : MonoBehaviour {
 		if (Input.GetMouseButton (0)) {
 			isHidden = true;
 			transform.position = Vector3.MoveTowards (transform.position, closest.position, speed * Time.deltaTime);
-		} else if (!Input.GetMouseButton (0)) {
+			if (transform.position == closest.position) {
+				_hideTime -= Time.deltaTime;
+				if (_hideTime <= 0) {
+					confidence.ChangeConfidence (-5);
+					_hideTime = 5f;
+				} else {
+					_addTime -= Time.deltaTime;
+					if (_addTime <= 0) {
+						confidence.ChangeConfidence (2f);
+						_addTime = 2f;
+					}
+				}
+			}
+		} else if (!Input.GetMouseButton (0) && transform.position.z != z) {
 			isHidden = false;
+			_hideTime = 5f;
+			transform.position = Vector3.MoveTowards (transform.position, new Vector3 (transform.position.x, transform.position.y, z), speed * Time.deltaTime);
 		}
 
 		if (!isHidden) {
