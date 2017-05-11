@@ -15,8 +15,10 @@ public class Player : MonoBehaviour {
 	private float _timeLeft = 3f;
 	private GameObject [] _hidingSpots;
 	private List<GameObject> _filterHidden;
+	private float z;
 
 	private void Awake() {
+		z = transform.position.z;
 		_hidingSpots = GameObject.FindGameObjectsWithTag ("Hide");
 		_filterHidden = new List<GameObject> ();
 		foreach (GameObject go in _hidingSpots) {
@@ -26,18 +28,19 @@ public class Player : MonoBehaviour {
 	}
 
 	private void Update() {
-		FilterHidingSpots ();
-
+		
 		Transform closest = ClosestHidingPlace (_filterHidden).transform;
-		if (Input.GetMouseButton (0) && transform.position.x == closest.position.x) {
+		if (Input.GetMouseButton (0)) {
 			isHidden = true;
-			StartCoroutine ("DelayCountdown");
 			transform.position = Vector3.MoveTowards (transform.position, closest.position, speed * Time.deltaTime);
 		} else if (!Input.GetMouseButton (0)) {
 			isHidden = false;
 		}
 
 		if (!isHidden) {
+			FilterHidingSpots ();
+			if (transform.position.z != z)
+				transform.Translate (Vector3.forward * speed * Time.deltaTime);
 			transform.Translate (Vector3.right * speed * Time.deltaTime);
 			_timeLeft -= Time.deltaTime;
 			if (_timeLeft <= 0) {
@@ -56,7 +59,6 @@ public class Player : MonoBehaviour {
 			}
 
 		}
-		print (_filterHidden.Count);
 	}
 
 	private GameObject ClosestHidingPlace(List<GameObject> hide) {
@@ -70,9 +72,5 @@ public class Player : MonoBehaviour {
 		return hide [minIndex];
 
 	}
-
-	private IEnumerator DelayCountdown () {
-		yield return new WaitForSeconds (5);
-		confidence.ChangeConfidence (-5);
-	}
+		
 }
