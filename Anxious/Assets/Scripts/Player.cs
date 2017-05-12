@@ -10,6 +10,7 @@ public class Player : MonoBehaviour {
 	public bool isHidden;
 	public ConfidenceController confidence;
 	public float speed = 2f;
+	public Manager manager;
 
 	[SerializeField]
 	private float _timeLeft = 3f;
@@ -67,7 +68,9 @@ public class Player : MonoBehaviour {
 			}
 		} 
 
-
+		if (transform.position.x >= 4f) {
+			manager.ChangeScene (2);
+		}
 	}
 
 	private void FilterHidingSpots () {
